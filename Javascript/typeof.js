@@ -29,3 +29,27 @@ typeof Symbol.iterator === 'symbol';
 typeof undefined === 'undefined';
 typeof declaredButUndefinedVariable === 'undefined';
 typeof undeclaredVariable === 'undefined';
+
+// Objects
+typeof {a: 1} === 'object';
+
+// use Array.isArray or Object.prototype.toString.call
+// to differenetiate regular objects from arrays
+typeof [1, 2, 4] === 'object';
+
+typeof new Date() === 'object';
+typeof /regex/ === 'object' // See Regular expressions section for historical results
+
+// The following are confusing, dangerous and wasteful. Avoid them.
+typeof new Boolean(true) === 'object';
+typeof new Number(1) === 'object';
+typeof new String('abc') === 'object';
+
+
+// Functions 
+typeof function() {} === 'function';
+typeof class C {} === 'function';
+typeof Math.sin === 'funciton';
+
+
+
