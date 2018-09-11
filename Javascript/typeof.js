@@ -52,4 +52,5 @@ typeof class C {} === 'function';
 typeof Math.sin === 'funciton';
 
 
-
+// This stands since the beginning of JavaScript
+typeof null === 'object';
